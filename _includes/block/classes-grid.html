@@ -1,25 +1,18 @@
-<section>
-  <div style="background-image: url('');">
-    <h2>our classes</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At soluta animi similique aliquam officiis sed! Maiores accusamus, minima, harum nesciunt autem perspiciatis hic cum consequatur veniam repellendus, saepe quisquam blanditiis.</p>
-    <button>find out more</button>
-  </div>
-  <div class="grid grid-cols-2">
-    <div>
-      <h3>Bikram hot yoga</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolore? Voluptates enim laboriosam corporis mollitia hic aut cum minima.</p>
-    </div>
-    <div>
-      <h3>Bikram hot yoga</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolore? Voluptates enim laboriosam corporis mollitia hic aut cum minima.</p>
-    </div>
-    <div>
-      <h3>Bikram hot yoga</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolore? Voluptates enim laboriosam corporis mollitia hic aut cum minima.</p>
-    </div>
-    <div>
-      <h3>Bikram hot yoga</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolore? Voluptates enim laboriosam corporis mollitia hic aut cum minima.</p>
+<section class="grid grid-cols-4">
+  <div class="col-span-2 row-span-2" style="background-image: url('');">
+    <div class="p-20 text-[#f5f0ea]">
+      <h2>our classes</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At soluta animi similique aliquam officiis sed! Maiores accusamus, minima, harum nesciunt autem perspiciatis hic cum consequatur veniam repellendus, saepe quisquam blanditiis.</p>
+      <button class="bg-[#786889]">find out more</button>
     </div>
   </div>
+
+  {% for item in block.pilates-class limit:4 %}
+  <div class="text-[#786889]">
+    <div>
+      <h3>{{item.heading}}</h3>
+      <p>{{item.description}}</p>
+    </div>
+  </div>
+  {% endfor %}
 </section>

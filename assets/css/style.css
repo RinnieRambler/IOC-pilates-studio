@@ -440,6 +440,15 @@ video {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
 .block {
   display: block;
 }
@@ -449,11 +458,17 @@ video {
 .min-h-\[50vh\] {
   min-height: 50vh;
 }
+.min-h-screen {
+  min-height: 100vh;
+}
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .bg-\[\#f5f0ea\] {
   --tw-bg-opacity: 1;
@@ -462,6 +477,18 @@ video {
 .bg-\[\#786889\] {
   --tw-bg-opacity: 1;
   background-color: rgb(120 104 137 / var(--tw-bg-opacity));
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-contain {
+  background-size: contain;
+}
+.bg-right {
+  background-position: right;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 .p-20 {
   padding: 5rem;

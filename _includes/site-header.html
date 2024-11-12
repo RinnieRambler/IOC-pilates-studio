@@ -1,5 +1,5 @@
 <!------- header banner ------->
-<header class="p-20 text-[#786889]" style="background-image: url('');">
+<header class="p-20 text-[#786889] bg-no-repeat min-h-screen {% if page.banner.header-style == 'header-style-1' %} bg-cover {% elsif page.banner.header-style == 'header-style-2' %} bg-contain bg-right {% endif %} " style="background-image: url('{{page.banner.banner-image}}');">
 
   <nav class="grid grid-cols-6">
     <div col-span-3>
