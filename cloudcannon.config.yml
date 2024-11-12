@@ -1,0 +1,82 @@
+_schema: _schema
+paths:
+  uploads: uploads
+  static: ''
+collections_config:
+  pages:
+    path: ''
+    name: Pages
+    icon: wysiwyg
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_structures:
+  blocks:
+    style: select
+    values:
+    -  label: services 
+       value:
+              _id: text-and-image
+              heading: Text and image block
+              offerings: 
+              - image: https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                heading: Duis Aute
+                description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!
+              color-scheme: leaf-500
+    -  label: split banner
+       value:
+              _id: overlap-text-image
+              image: https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+              heading: Who are we
+              description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nesciunt commodi voluptas hic ipsum, dolorum dolores. Ea voluptatem accusantium temporibus ullam! Repudiandae rerum eius culpa numquam architecto doloremque corporis et!
+              button-text: Find out more
+              button-link: #
+    - label: text block grid
+      value: 
+              _id: brand-names
+              brand-names:
+                - title: Brand name
+                - title: Brand name
+                - title: Brand name
+                - title: Brand name
+                - title: Brand name
+                - title: Brand name
+    - label: Image Gallery
+      value: 
+              _id: gallery
+              images:
+                 - image: https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                  - image: https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                  - image: https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                  - image: https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                  - image: https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                  - image: https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+_snippets_imports:
+  jekyll: true
+timezone: Asia/Makassar
+markdown:
+  engine: kramdown
+  options:
+    xhtml: false
+    breaks: false
+    linkify: false
+    typographer: false
+    spaced_lists: false
+    sentence_per_line: false
+    gfm: false
+    code_block_fences: '```'
+    escape_snippets_in_code_blocks: false
+    treat_indentation_as_code: true
+    table: false
+    strikethrough: false
+    subscript: false
+    superscript: false
+    heading_ids: false
+    attributes: true
+    attribute_elements:
+      inline: right
+      block: below
+      tr: none
+      td: none
+      li: right-of-prefix
