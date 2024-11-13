@@ -9,3 +9,34 @@
 @tailwind utilities;
 
 /* Custom CSS */
+
+body {
+    color: #786889;
+}
+
+button {
+    padding: 0.5rem 1rem;
+}
+
+h1 {
+    font-size: 100px;
+    letter-spacing: -5%;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+     font-size: 24px;
+}
+
+h4 {
+    font-size: 16px;
+    letter-spacing: -3.5%;
+}
+
+p {
+    font-size: 16px;
+    letter-spacing: -3.5%; 
+}

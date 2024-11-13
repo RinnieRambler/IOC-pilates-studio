@@ -437,14 +437,11 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 .row-span-2 {
   grid-row: span 2 / span 2;
@@ -458,11 +455,17 @@ video {
 .min-h-\[50vh\] {
   min-height: 50vh;
 }
+.min-h-\[75vh\] {
+  min-height: 75vh;
+}
 .min-h-screen {
   min-height: 100vh;
 }
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+.min-h-\[575h\] {
+  min-height: 575h;
+}
+.min-h-\[75h\] {
+  min-height: 75h;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -470,19 +473,25 @@ video {
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
-.bg-\[\#f5f0ea\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 240 234 / var(--tw-bg-opacity));
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .bg-\[\#786889\] {
   --tw-bg-opacity: 1;
   background-color: rgb(120 104 137 / var(--tw-bg-opacity));
 }
-.bg-cover {
-  background-size: cover;
+.bg-\[\#f5f0ea\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 240 234 / var(--tw-bg-opacity));
 }
 .bg-contain {
   background-size: contain;
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-center {
+  background-position: center;
 }
 .bg-right {
   background-position: right;
@@ -493,6 +502,9 @@ video {
 .p-20 {
   padding: 5rem;
 }
+.p-5 {
+  padding: 1.25rem;
+}
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -500,17 +512,6 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-.font-bold {
-  font-weight: 700;
-}
-.text-green-900 {
-  --tw-text-opacity: 1;
-  color: rgb(20 83 45 / var(--tw-text-opacity));
 }
 .text-\[\#786889\] {
   --tw-text-opacity: 1;
@@ -522,3 +523,34 @@ video {
 }
 
 /* Custom CSS */
+
+body {
+    color: #786889;
+}
+
+button {
+    padding: 0.5rem 1rem;
+}
+
+h1 {
+    font-size: 100px;
+    letter-spacing: -5%;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+     font-size: 24px;
+}
+
+h4 {
+    font-size: 16px;
+    letter-spacing: -3.5%;
+}
+
+p {
+    font-size: 16px;
+    letter-spacing: -3.5%; 
+}
