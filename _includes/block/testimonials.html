@@ -1,13 +1,14 @@
-<section>
+<section class="p-20 text-purple min-h-[90vh]">
   <h2>Testimonials</h2>
-
-  {% for item in site.data.testimonials limit:4 %}
   <div class="grid grid-cols-3 gap-6">
-    <div style="background-image: url('{{item.image}}')"></div>
-    <h3>{{item.name}}</h3>
-    <p>{{item.testimonial}}</p>
+  {% for item in site.data.testimonials limit:3 %}
+  <div class="text-center">
+      <div class="aspect-square bg-center bg-cover" style="background-image: url('{{item.image}}')"></div>
+      <h3 class="border-b pb-6">{{item.name}}</h3>
+      <p>{{item.testimonial}}</p>
   </div>
   {% endfor %}
+</div>
 </section>
 
  
