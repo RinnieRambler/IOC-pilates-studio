@@ -13,7 +13,11 @@
 /* ---------Default Styles to apply to whole project ------------ */
 
 body {
-    color: 'text-purple';
+    color: #786889;
+}
+
+body *{
+    border-color: initial;
 }
 
 button {

@@ -1,0 +1,12 @@
+<section class="grid grid-cols-3 gap-4 p-20">
+  {% for item in block.pilates-class limit:3 %}
+  <div class="border border-purple text-center">
+    <div class="aspect-square bg-cover m-8" style="background-image: url('{{item.image}}');background-position: {{item.image-position}};"></div class="text-center">
+    <h3 class="text-center m-8">{{item.title}}</h3>
+    <div class="border-t">
+      <p class="text-center  mx-8 mt-6">{{item.description}}</p>
+      <button class="bg-purple text-light " href="">sign up</button>
+    </div>
+  </div>
+  {% endfor %}
+</section>
