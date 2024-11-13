@@ -121,7 +121,7 @@
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
+  border-color: currentColor; /* 2 */
 }
 ::before,
 ::after {
@@ -143,7 +143,7 @@ html,
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-family: poppins, ui-sans-serif; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
   -webkit-tap-highlight-color: transparent; /* 7 */
@@ -437,6 +437,66 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+h1, h2, h3, h4 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+h1 {
+  font-family: oranienbaum, ui-serif;
+  font-size: 8rem;
+  text-transform: capitalize;
+  line-height: .85;
+}
+h2 {
+  font-family: oranienbaum, ui-serif;
+  font-size: 3.75rem;
+  text-transform: capitalize;
+  line-height: .85;
+}
+h3 {
+  font-family: oranienbaum, ui-serif;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  line-height: .85;
+}
+h4 {
+  font-family: poppins, ui-sans-serif;
+  font-size: 1.125rem;;
+  text-transform: uppercase;
+  line-height: .85;
+}
+p {
+  margin-bottom: 0.5em;
+  font-family: Montserrat, ui-sans-serif;
+  line-height: 1.5;
+}
+a {
+  font-family: poppins, ui-sans-serif;
+  text-transform: uppercase;
+}
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(245 240 234 / var(--tw-text-opacity));
+}
+.text-purple {
+  --tw-text-opacity: 1;
+  color: rgb(120 104 137 / var(--tw-text-opacity));
+}
+.border-purple {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(120 104 137 / var(--tw-border-opacity));
+}
+.bg-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 104 137 / var(--tw-bg-opacity));
+}
+.bottom-4 {
+  bottom: 1rem;
+}
+.top-4 {
+  top: 1rem;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -446,14 +506,20 @@ video {
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
+.mt-0 {
+  margin-top: 0px;
+}
+.mt-6 {
+  margin-top: 1.5rem;
+}
 .block {
   display: block;
 }
+.flex {
+  display: flex;
+}
 .grid {
   display: grid;
-}
-.min-h-\[50vh\] {
-  min-height: 50vh;
 }
 .min-h-\[75vh\] {
   min-height: 75vh;
@@ -461,11 +527,11 @@ video {
 .min-h-screen {
   min-height: 100vh;
 }
-.min-h-\[575h\] {
-  min-height: 575h;
+.min-h-full {
+  min-height: 100%;
 }
-.min-h-\[75h\] {
-  min-height: 75h;
+.min-h-\[90vh\] {
+  min-height: 90vh;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -476,6 +542,25 @@ video {
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.gap-6 {
+  gap: 1.5rem;
+}
+.border {
+  border-width: 1px;
+}
+.border-purple {
+  --tw-border-opacity: 1;
+  border-color: rgb(120 104 137 / var(--tw-border-opacity));
+}
 .bg-\[\#786889\] {
   --tw-bg-opacity: 1;
   background-color: rgb(120 104 137 / var(--tw-bg-opacity));
@@ -484,17 +569,15 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(245 240 234 / var(--tw-bg-opacity));
 }
+.bg-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 104 137 / var(--tw-bg-opacity));
+}
 .bg-contain {
   background-size: contain;
 }
 .bg-cover {
   background-size: cover;
-}
-.bg-center {
-  background-position: center;
-}
-.bg-right {
-  background-position: right;
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
@@ -521,36 +604,25 @@ video {
   --tw-text-opacity: 1;
   color: rgb(245 240 234 / var(--tw-text-opacity));
 }
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(245 240 234 / var(--tw-text-opacity));
+}
+.text-purple {
+  --tw-text-opacity: 1;
+  color: rgb(120 104 137 / var(--tw-text-opacity));
+}
 
 /* Custom CSS */
 
+/* ---------Default Styles to apply to whole project ------------ */
+
 body {
-    color: #786889;
+    color: 'text-purple';
 }
 
 button {
     padding: 0.5rem 1rem;
-}
-
-h1 {
-    font-size: 100px;
-    letter-spacing: -5%;
-}
-
-h2 {
-    font-size: 32px;
-}
-
-h3 {
-     font-size: 24px;
-}
-
-h4 {
-    font-size: 16px;
-    letter-spacing: -3.5%;
-}
-
-p {
-    font-size: 16px;
-    letter-spacing: -3.5%; 
+    margin: 1rem 0;
+    text-transform: uppercase;
 }

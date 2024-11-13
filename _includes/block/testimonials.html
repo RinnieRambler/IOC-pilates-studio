@@ -1,0 +1,13 @@
+<section>
+  <h2>Testimonials</h2>
+
+  {% for item in site.data.testimonials limit:4 %}
+  <div class="grid grid-cols-3 gap-6">
+    <div style="background-image: url('{{item.image}}')"></div>
+    <h3>{{item.name}}</h3>
+    <p>{{item.testimonial}}</p>
+  </div>
+  {% endfor %}
+</section>
+
+ 

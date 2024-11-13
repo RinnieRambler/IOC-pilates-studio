@@ -10,33 +10,67 @@
 
 /* Custom CSS */
 
+/* ---------Default Styles to apply to whole project ------------ */
+
 body {
-    color: #786889;
+    color: 'text-purple';
 }
 
 button {
     padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
 }
 
-h1 {
-    font-size: 100px;
-    letter-spacing: -5%;
-}
 
-h2 {
-    font-size: 32px;
-}
+@layer base {
 
-h3 {
-     font-size: 24px;
-}
+    h1, h2, h3, h4  {
+        @apply my-[0.75em];
+    }
+  
+    h1 {
+        @apply text-9xl capitalize leading-tight font-serif;
+    }
+    h2 {
+        @apply text-6xl capitalize leading-tight font-serif;
+    }
+    h3 {
+        @apply text-2xl capitalize leading-tight font-serif;
+    }
+  
+    h4 {
+        @apply text-lg uppercase leading-tight font-sans;
+    }
+  
+    p {
+        @apply mb-[0.5em] leading-normal font-geom;
+    }
+  
+    a {
+        @apply font-sans uppercase;
+    }
+  
+  }
+  
+@layer components {
 
-h4 {
-    font-size: 16px;
-    letter-spacing: -3.5%;
-}
-
-p {
-    font-size: 16px;
-    letter-spacing: -3.5%; 
-}
+    .text-light {
+       @apply text-[#f5f0ea];
+    }
+    .bg-light {
+        @apply bg-[#f5f0ea];
+    }
+  
+    .text-purple {
+       @apply text-[#786889];
+    }
+  
+    .border-purple {
+       @apply border border-[#786889];
+    }
+  
+    .bg-purple {
+      @apply bg-[#786889];
+    }
+  }

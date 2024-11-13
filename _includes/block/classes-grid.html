@@ -1,5 +1,5 @@
 <section class="grid grid-cols-4">
-  <div class="col-span-2 row-span-2 bg-cover bg-no-repeat bg-center min-h-[75vh]" style="background-image: url('/assets/images/jempinis-12-3.jpg');">
+  <div class="col-span-2 row-span-2 bg-cover bg-no-repeat bg-center min-h-[90vh] flex items-end" style="background-image: url('/assets/images/jempinis-12-3.jpg');">
     <div class="p-20 text-[#f5f0ea]">
       <h2>our classes</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At soluta animi similique aliquam officiis sed! Maiores accusamus, minima, harum nesciunt autem perspiciatis hic cum consequatur veniam repellendus, saepe quisquam blanditiis.</p>
@@ -8,7 +8,7 @@
   </div>
 
   {% for item in block.pilates-class limit:4 %}
-  <div class="text-[#786889] p-5">
+  <div class="text-purple p-5 flex items-end border border-purple">
     <div>
       <h3>{{item.title}}</h3>
       <p>{{item.description}}</p>
