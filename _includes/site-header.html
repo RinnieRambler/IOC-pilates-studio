@@ -1,17 +1,21 @@
 <!------- header banner ------->
-<header class="p-20 text-purple bg-no-repeat min-h-screen {% if page.banner.header-style == 'header-style-1' %} bg-cover {% elsif page.banner.header-style == 'header-style-2' %} bg-contain bg-right {% endif %} " style="background-image: url('{{page.banner.banner-image}}');">
+<header class="relative p-20 text-purple  min-h-screen flex flex-col ">
 
-  <nav class="grid grid-cols-6 ">
+  <img class="h-full object-cover absolute top-0 {% if page.banner.header-style == 'header-style-1' %} w-full left-0 {% elsif page.banner.header-style == 'header-style-2' %} right-0 w-[70%] {% endif %} " style="object-position: {{page.banner.banner-image-position}}" src="{{page.banner.banner-image}}">
+
+  <nav class="relative flex justify-between ">
     <div class="col-span-3">
       <a href="/index.html">the pilates studio</a>
     </div>
-    <a href="/our-classes.html">our classes</a>
-    <a href="">schedule</a>
-    <a href="">contact</a>
+    <div class="flex gap-24">
+      <a href="/our-classes.html">our classes</a>
+      <a href="/schedule.html">schedule</a>
+      <a href="">contact</a>
+    </div>
   </nav>
 
-  <div class="">
-    <hr class="bg-purple mt-6">
+  <div class="relative my-auto">
+    <hr class="bg-purple mt-6 -ml-20 w-72">
     <h3 >welcome to</h3>
     <h1 class="mt-0">The Pilates Studio</h1>
   </div>
