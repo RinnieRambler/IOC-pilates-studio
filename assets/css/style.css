@@ -504,17 +504,17 @@ a {
 .bottom-4 {
   bottom: 1rem;
 }
-.top-4 {
-  top: 1rem;
-}
 .left-0 {
   left: 0px;
+}
+.right-0 {
+  right: 0px;
 }
 .top-0 {
   top: 0px;
 }
-.right-0 {
-  right: 0px;
+.top-4 {
+  top: 1rem;
 }
 .col-span-2 {
   grid-column: span 2 / span 2;
@@ -536,6 +536,9 @@ a {
   margin-top: auto;
   margin-bottom: auto;
 }
+.-ml-20 {
+  margin-left: -5rem;
+}
 .ml-auto {
   margin-left: auto;
 }
@@ -547,12 +550,6 @@ a {
 }
 .mt-6 {
   margin-top: 1.5rem;
-}
-.-ml-96 {
-  margin-left: -24rem;
-}
-.-ml-20 {
-  margin-left: -5rem;
 }
 .block {
   display: block;
@@ -575,14 +572,14 @@ a {
 .min-h-screen {
   min-height: 100vh;
 }
-.w-full {
-  width: 100%;
+.w-72 {
+  width: 18rem;
 }
 .w-\[70\%\] {
   width: 70%;
 }
-.w-72 {
-  width: 18rem;
+.w-full {
+  width: 100%;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -596,9 +593,6 @@ a {
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
 .flex-col {
   flex-direction: column;
 }
@@ -611,17 +605,14 @@ a {
 .justify-between {
   justify-content: space-between;
 }
+.gap-24 {
+  gap: 6rem;
+}
 .gap-4 {
   gap: 1rem;
 }
 .gap-6 {
   gap: 1.5rem;
-}
-.gap-12 {
-  gap: 3rem;
-}
-.gap-24 {
-  gap: 6rem;
 }
 .divide-x > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-x-reverse: 0;
@@ -669,9 +660,6 @@ a {
   --tw-bg-opacity: 1;
   background-color: rgb(120 104 137 / var(--tw-bg-opacity));
 }
-.bg-contain {
-  background-size: contain;
-}
 .bg-cover {
   background-size: cover;
 }
@@ -684,14 +672,6 @@ a {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-.object-center {
-  -o-object-position: center;
-     object-position: center;
-}
-.object-top {
-  -o-object-position: top;
-     object-position: top;
 }
 .p-20 {
   padding: 5rem;
@@ -721,6 +701,10 @@ a {
 .py-2p {
   padding-top: 2%;
   padding-bottom: 2%;
+}
+.py-5p {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .pb-6 {
   padding-bottom: 1.5rem;
@@ -760,3 +744,122 @@ button {
     margin: 1rem 0;
     text-transform: uppercase;
 }
+
+  /* Put this outside of the tailwind components in the style.css */
+
+/* Background  */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 240 234 / var(--tw-bg-opacity));
+}
+  
+  /* Background  */
+  #momence-embed #momence-plugin-host-schedule * {
+  border-radius: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 240 234 / var(--tw-bg-opacity));
+  font-family: poppins, ui-sans-serif;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(120 104 137 / var(--tw-text-opacity));
+}
+  
+  /* Styling the headings  */
+  #momence-embed #momence-plugin-host-schedule h4 {
+  font-family: oranienbaum, ui-serif;
+  --tw-text-opacity: 1;
+  color: rgb(120 104 137 / var(--tw-text-opacity));
+}
+  
+  
+  /* Hide the class type text above the class title */
+  #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type {
+    display: none;
+  }
+  
+  /* Hide featured image */
+  #momence-embed #momence-plugin-host-schedule .jDJBAl,
+  #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-image {
+    display: none;
+  }
+  
+  /* Teacher Name & Bio */
+  #momence-embed #momence-plugin-host-schedule .momence-session-teacher {
+    display: none;
+  }
+  
+  /* Style the featured button  */
+  #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-booked_button {
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 104 137 / var(--tw-bg-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(245 240 234 / var(--tw-text-opacity));
+}
+  
+  /* Remove the border from the arrows left and right at the top  */
+  #momence-embed #momence-plugin-host-schedule .momence-arrow-button {
+  border-style: none;
+}
+  
+  /* Add more space below the first row  */
+  #momence-embed #momence-plugin-host-schedule .momence-host_schedule-first_row {
+  padding-bottom: 1rem;
+}
+  
+  
+  /* Add more space below the first row  */
+  #momence-embed #momence-plugin-host-schedule .momence-event_type_select-button {
+  pointer-events: none;
+  font-family: oranienbaum, ui-serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+  
+  /* Hide powered by momence */
+  
+  #momence-embed #momence-plugin-host-schedule .momence-host_schedule-powered_by_momence {
+    display: none;
+  }
+  
+  /* Styling the lines under the list of pages */
+  #momence-embed #momence-plugin-host-schedule .gZOyVg::after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 104 137 / var(--tw-bg-opacity));
+}
+  
+  /* Border around items */
+  
+  body #momence-plugin-host-schedule .gfbZfI{
+  border-color: #786889;
+  }
+  
+  body #momence-plugin-host-schedule .hkEhZv {
+    border-color: #786889;
+  }
+  
+  body #momence-plugin-host-schedule .kMrJkC {
+    border-color: #786889;
+  }
+  
+  /* Removal of timezone */
+  body #momence-plugin-host-schedule .kSZlqf {
+    display:none;
+  }
+  
+  /* Button style */
+  body #momence-embed #momence-plugin-host-schedule .EenGE {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 104 137 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(245 240 234 / var(--tw-text-opacity));
+}
+  
