@@ -551,6 +551,9 @@ a {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .block {
   display: block;
 }
@@ -572,6 +575,9 @@ a {
 .min-h-screen {
   min-height: 100vh;
 }
+.min-h-\[75vh\] {
+  min-height: 75vh;
+}
 .w-72 {
   width: 18rem;
 }
@@ -580,6 +586,9 @@ a {
 }
 .w-full {
   width: 100%;
+}
+.resize-none {
+  resize: none;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -639,6 +648,9 @@ a {
 }
 .border-t {
   border-top-width: 1px;
+}
+.border-r {
+  border-right-width: 1px;
 }
 .border-purple {
   --tw-border-opacity: 1;
@@ -706,6 +718,14 @@ a {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -714,6 +734,14 @@ a {
 }
 .text-right {
   text-align: right;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+.text-sm {
+  font-size: 0.875rem;;
+  line-height: 1.2;
 }
 .uppercase {
   text-transform: uppercase;
@@ -861,5 +889,48 @@ button {
   background-color: rgb(120 104 137 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(245 240 234 / var(--tw-text-opacity));
+}
+  .placeholder\:text-purple::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(120 104 137 / var(--tw-text-opacity));
+}
+  .placeholder\:text-purple::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(120 104 137 / var(--tw-text-opacity));
+}
+  .placeholder\:text-sm::-moz-placeholder {
+  font-size: 0.875rem;;
+  line-height: 1.2;
+}
+  .placeholder\:text-sm::placeholder {
+  font-size: 0.875rem;;
+  line-height: 1.2;
+}
+  .placeholder\:uppercase::-moz-placeholder {
+  text-transform: uppercase;
+}
+  .placeholder\:uppercase::placeholder {
+  text-transform: uppercase;
+}
+  .placeholder\:text-purple::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(120 104 137 / var(--tw-text-opacity));
+}
+  .placeholder\:text-purple::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(120 104 137 / var(--tw-text-opacity));
+}
+  .focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+  .focus-visible\:outline-none:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+  @media (min-width: 1024px) {
+  .lg\:grid {
+    display: grid;
+  }
 }
   

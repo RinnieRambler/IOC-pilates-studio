@@ -1,0 +1,16 @@
+<!----------- Contact form section ---------->
+    
+<section class="lg:grid grid-cols-2 min-h-[75vh] border border-black">
+  <div></div>
+  <div class="p-20">
+    <form class="">
+      <input type="text" id="name" name="name" placeholder="{{block.input-box-name-1}}" class="block w-full bg-light border-b  placeholder:text-purple placeholder:focus:text-gray-400 placeholder:uppercase placeholder:text-sm mb-4 focus:outline-none focus-visible:outline-none">
+      <input type="email" id="Email" name="Email" class="block w-full bg-light border-b border-black placeholder:text-purple placeholder:focus:text-gray-400 placeholder:uppercase placeholder:text-sm mb-4 focus:outline-none focus-visible:outline-none" placeholder="{{block.input-box-name-2}}" required>
+      <label for="Message" class="block uppercase text-sm text-black">{{block.input-box-name-3}}</label>
+      <textarea id="Message" name="Message" class="block w-full bg-light border border-purple mb-4 focus:outline-none focus-visible:outline-none resize-none" rows="6" maxlength="3000" required></textarea>
+      <div class="text-right">
+        <input type="submit" value="Send" class="border bg-purple text-light py-2 px-8 uppercase text-sm">
+      </div>
+    </form>
+  </div>
+</section>
